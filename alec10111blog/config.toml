@@ -1,0 +1,5 @@
+baseURL = 'https://alec10111.github.io/'
+languageCode = 'en-us'
+title = 'Alec10111 Developer Blog'
+
+theme="hugo-theme-fuji"
