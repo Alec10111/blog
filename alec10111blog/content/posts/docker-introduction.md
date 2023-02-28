@@ -3,8 +3,6 @@ title: "Docker Introduction"
 date: 2023-02-28T15:38:07+01:00
 ---
 
-# Docker for beginners
-
 ## Introduction
 
 Docker is an essential part of modern software development. This post serves as an introduction to the fundamentals of Docker, including a practical example.
