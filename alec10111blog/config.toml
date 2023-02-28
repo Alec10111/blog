@@ -1,5 +1,101 @@
 baseURL = 'https://alec10111.github.io/'
-languageCode = 'en-us'
 title = 'Alec10111 Developer Blog'
-
+languageCode = "en"  
 theme="hugo-theme-fuji"
+
+summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
+paginate = 10
+
+
+[outputFormats]
+[outputFormats.SearchIndex]
+isPlainText = true
+notAlternative = true
+mediaType = "application/json"
+path = "/search/"
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
+[permalinks]
+post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
+
+[params]
+author = "Carlos Fernandez"                # You can also set author in post front matter individually
+subTitle = "The washed up mathematician turned programmer"
+defaultTheme = "auto"              # default theme when first visit (auto|dark|light)
+
+# Source URL of the website, will appear in the footer
+sourceURL = "https://alec10111.github.io/"
+
+# Word counter and read time indicator in post metadata
+showWordCounter = true
+showReadTime = false
+hideNoTagList = false
+
+# Posts shown in homepage
+mainSections = ["posts"]
+
+
+# Comments
+# utterances, see: https://utteranc.es/
+# utterancesRepo = "*/*"
+# utterancesIssueTerm = "pathname"
+
+# custom lazyload placeholder
+# 16:9
+lazyPlaceholder = "/assets/lazyload/dsrca_loading_480x270.svg"
+# 32:9
+lazyPlaceholderRow = "/assets/lazyload/dsrca_loading_960x270.svg"
+# 8:9
+lazyPlaceholderCol = "/assets/lazyload/dsrca_loading_480x540.svg"
+
+# Let images display in full brightness under dark mode
+# disableDarkImage = true
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # Enable user to embed HTML snippets in Markdown content
+[markup.highlight]
+codeFences = false # Disable Hugo's code highlighter
+
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+
+[taxonomies]
+tag = "tags"
+
+[menu]
+[[menu.nav]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.nav]]
+name = "Archives"
+url = "/archives/"
+weight = 2
+[[menu.nav]]
+name = "About"
+url = "/about/"
+weight = 3
+[[menu.nav]]
+name = "Search"
+url = "/search/"
+weight = 4
+
+[[menu.link]]
+name = "GitHub"
+url = "https://github.com/Alec10111"
+weight = 1
+[[menu.link]]
+name = "LinkedIn"
+url = "https://www.linkedin.com/in/cafl/"
+weight = 2
+
+[build]
+noJSConfigInAssets = true
+
+[security]
+enableInlineShortcodes = true

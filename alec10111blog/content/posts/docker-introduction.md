@@ -1,6 +1,8 @@
 ---
 title: "Docker Fundamentals"
 date: 2023-02-28T15:38:07+01:00
+tags: ["docker"]
+showToc: false
 ---
 
 ## Introduction
@@ -10,6 +12,8 @@ Docker is an essential part of modern software development. This post serves as 
 ## What is Docker?
 
 Docker is an open-source platform written in Go that allows developers to create, deploy, and run applications in containers, providing a consistent and portable environment across different machines and operating systems.
+
+<!--more-->
 
 Instead of emulating an entire OS like a virtual machines, Docker shares the host operating system kernel and only requires the necessary libraries and dependencies to run the application, resulting in lower resource utilisation.
 
