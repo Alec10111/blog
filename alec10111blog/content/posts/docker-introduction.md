@@ -1,5 +1,5 @@
 ---
-title: "Docker Introduction"
+title: "Docker Fundamentals"
 date: 2023-02-28T15:38:07+01:00
 ---
 
@@ -20,14 +20,19 @@ Docker's fundamental blocks are containers and images.
 ## Containers
 
 A container is a process that creates an isolated environment to run your software with its own file system, networking, and resources. This makes it possible to run multiple applications on the same server, without conflicts or interference between them.
+
 Although they are isolated, containers may communicate with other containers using a standardised interface (Docker networks).
+
 They can run on local machines, virtual machines, or cloud-based servers, and can be easily scaled up or down on traffic demand.
 
 ## Images
 
 Docker images are templates from which containers are created, this is, a set of instructions on how to build and configure them. To create an image you need a Dockerfile, a file containing commands to install and configure the necessary software, copy the application code to the container, expose the appropriate ports for communication and so on.
+
 Images can be stored in a remote registry, such as Docker Hub, accessible to other developers or team members. Docker images are immutable, meaning that they cannot be changed once they are created. This ensures consistency and reproducibility across different environments and deployments.
+
 Any modifications or updates must be made by building a new image based on the original one. (the FROM command on the Dockerfile)
+
 **Note:** Containers can be modified during runtime, but such changes are not reflected in the original image and are lost when the container is deleted or stopped.
 
 ## Practical example
